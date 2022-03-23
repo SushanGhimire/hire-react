@@ -6,20 +6,18 @@ const SliderRange = () => {
     setSliderValue(e.target.value);
   };
   return (
-    <div className="flex items-center gap-4 justify-center">
-      <div class="flex flex-col">
-        <label htmlFor="">Slider Range</label>
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value={sliderValue}
-          name="sliderValue"
-          step={5}
-          onChange={handleChange}
-        />
-        <span>{sliderValue}</span>
-      </div>
+    <div className="flex flex-col">
+      <label htmlFor="">Slider Range</label>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value={sliderValue}
+        name="sliderValue"
+        step={5}
+        onChange={handleChange}
+      />
+      <span>{sliderValue}</span>
     </div>
   );
 };
