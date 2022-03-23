@@ -6,6 +6,7 @@ module.exports = {
         danger: "#f36",
         sucess: "#4CAF50",
         disable: "#EAEBEC",
+        button: "#2A7DFB",
         border: {
           DEFAULT: "#eaeaea",
           dark: "#ACACAC",

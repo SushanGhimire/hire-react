@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Task1 = () => {
-  return (
-    <div>Task1</div>
-  )
-}
+  return <div className="">Task1</div>;
+};
 
-export default Task1
+export default Task1;
