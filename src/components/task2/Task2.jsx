@@ -12,15 +12,19 @@ const Task2 = () => {
   }, []);
   const filterData = (e) => {
     setFilter(e.target.value);
-    let filteredData = [];
-    dataList.forEach((data) => {
-      data.labels.forEach((label) => {
-        if (label.name === e.target.value) {
-          filteredData.push(data);
-        }
+    if (e.target.value === "all") {
+      fetchBugData(setLoading, setDataist, setFilteredDataList, setLabels);
+    } else {
+      let filteredData = [];
+      dataList.forEach((data) => {
+        data.labels.forEach((label) => {
+          if (label.name === e.target.value) {
+            filteredData.push(data);
+          }
+        });
       });
-    });
-    setFilteredDataList(filteredData);
+      setFilteredDataList(filteredData);
+    }
   };
   return (
     <>
@@ -35,6 +39,7 @@ const Task2 = () => {
               onChange={filterData}
             >
               <option hidden>Select The Label</option>
+              <option value="all">All</option>
               {labels.map((data, index) => {
                 return (
                   <option value={data} key={index}>
