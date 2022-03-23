@@ -25,7 +25,7 @@ const Task2 = () => {
   return (
     <>
       <div className="container p-10 flex items-center justify-center flex-col">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col items-center">
           <h1 className="text-xl">BUG Report Data</h1>
           <div className="flex items-center space-x-2">
             <label htmlFor="">Filter:</label>
