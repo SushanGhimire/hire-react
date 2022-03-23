@@ -71,7 +71,9 @@ const Task2 = () => {
                     const { title, user, state, updated_at } = data;
                     return (
                       <tr
-                        className={`${index % 2 == 0 && "bg-gray-200"} text-sm`}
+                        className={`${
+                          index % 2 === 0 && "bg-gray-200"
+                        } text-sm`}
                         key={index}
                       >
                         <td className="py-2 text-center px-3">{title}</td>

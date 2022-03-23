@@ -1,8 +1,7 @@
-import React, { useState } from "react";
 import Chart from "react-apexcharts";
 
 const BarChart = () => {
-  const [barDetail, setBarDetail] = useState({
+  const barDetail = {
     options: {
       chart: {
         id: "basic-bar",
@@ -17,7 +16,7 @@ const BarChart = () => {
         data: [30, 40, 45, 50, 49, 60, 70, 91],
       },
     ],
-  });
+  };
   return (
     <div className="">
       <div className="row">
